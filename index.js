@@ -3,6 +3,21 @@ import https from "node:https";
 import fs from "node:fs";
 import { spawn } from "node:child_process";
 
+
+
+
+
+/* 
+
+!!!!!!!!!!!!!!!!
+
+CURRENTLY THE CONVERSION IS POSSIBLE ONLY FOR THE GROUP NAMED "1CS - group 1"
+THE OTHER FUNCTIONALITY WILL BE ADDED IN THE FUTURE VERSIONS
+
+!!!!!!!!!!!!!!!!
+
+*/
+
 const httpsAgent = new https.Agent({
 	ca: fs.readFileSync("./celcat-chain.pem", "utf8"), //For now you need to name the certificate file like "celcat-chain.pem"
 });
